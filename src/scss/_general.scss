@@ -1,0 +1,37 @@
+@use './variables' as *;
+
+@use './utilities' as *;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    padding: 20px 0;
+}
+
+.container{
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul{
+    li{
+        list-style: none;
+    }
+}
+
+a{
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.active{
+    color: $color_blue;
+    border-bottom: 5px solid $color_blue;
+    padding-bottom: 37px;
+}

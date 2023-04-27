@@ -1,0 +1,17 @@
+@use './variables' as *;
+
+.d-flex{
+    display: flex;
+}
+
+.d-flex-space-bet{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.d-flex-cont-center-items-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

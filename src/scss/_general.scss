@@ -8,6 +8,10 @@
     box-sizing: border-box;
 }
 
+.main-wrapper{
+    height: 100vh;
+}
+
 header{
     padding: 20px 0;
 }
@@ -33,5 +37,5 @@ a{
 .active{
     color: $color_blue;
     border-bottom: 5px solid $color_blue;
-    padding-bottom: 37px;
+    padding-bottom: 30.5px;
 }

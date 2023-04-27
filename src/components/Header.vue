@@ -7,7 +7,8 @@ export default {
 
 <template>
   <header>
-    <div class="header-container d-flex-space-bet">
+    <div class="container">
+        <div class="header-container d-flex-space-bet">
         <div class="image">
             <img src="../assets/img/dc-logo.png" alt="dc-logo">
         </div>
@@ -28,6 +29,7 @@ export default {
             </nav>
         </div>
     </div>
+    </div>
   </header>
 </template>
 
@@ -35,7 +37,6 @@ export default {
 @use '../scss/variables' as *;
     header{
         height: 100px;
-        background-color: #a40000;
     }
 
     .header-container{
@@ -51,10 +52,8 @@ export default {
     
     .h-link{
         height: 100%;
-        background-color: #cd00d4;
         
         ul{
-            background-color: #0010c5;
             height: 100%;
         }
         
@@ -62,9 +61,9 @@ export default {
             height: 100%;
             padding: 0 15px;
         }
+
         a{
-            color: $color_white;
-            
+            font-weight: bold;
         }
     }
 

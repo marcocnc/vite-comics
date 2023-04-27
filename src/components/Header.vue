@@ -1,7 +1,13 @@
 
 <script>
+import {headerMenu} from '../data/database.js'
 export default {
-    name: 'Header'
+    name: 'Header',
+    data(){
+        return{
+            headerMenu,
+        }
+    }
 }
 </script>
 
@@ -15,7 +21,7 @@ export default {
         <div class="h-link d-flex-cont-center-items-center">
             <nav>
                 <ul class="d-flex">
-                    <li ><a class="active" href="#">CHARACTERS</a></li>
+                    <!-- <li ><a class="active" href="#">CHARACTERS</a></li>
                     <li><a href="#">COMICS</a></li>
                     <li><a href="#">MOVIES</a></li>
                     <li><a href="#">TV</a></li>
@@ -24,7 +30,8 @@ export default {
                     <li><a href="#">VIDEOS</a></li>
                     <li><a href="#">FANS</a></li>
                     <li><a href="#">NEWS</a></li>
-                    <li><a href="#">SHOP</a></li>
+                    <li><a href="#">SHOP</a></li> -->
+                    <li v-for="(link, index) in headerMenu" :key="index" ><a :class="{ 'active' : link.isActive}" href="#">{{ link.text }}</a></li>
                 </ul>
             </nav>
         </div>

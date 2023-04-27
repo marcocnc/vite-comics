@@ -1,13 +1,51 @@
 <script>
+import { ctaMenu } from '../data/database';
 export default {
-    name: 'Options'
+    name: 'Options',
+    data(){
+      return{
+        ctaMenu,
+      }
+    }
 }
 </script>
 
 <template>
-  <div><h1>aaaaaaa</h1></div>
+  <section id="cta">
+    <div class="container h-100">
+        <div class="row d-flex-space-bet h-100">
+            <div class="col d-flex-cont-center-items-center" v-for="(option, index) in ctaMenu" :key="index">
+                <div class="cta-image">
+                    <img :src="option.img" alt="">
+                </div>
+                <div class="cta-text">
+                    <span>{{ option.text }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
 </template>
 
-<style>
+<style lang="scss" scoped>
+@use '../scss/variables' as *;
+    #cta{
+        background-color: $color_blue;
+        color: $color_white;
+        height: 200px;
+    }
 
+    .cta-image{
+        img{
+            height: 70px;
+            object-fit: cover;
+            vertical-align: middle;
+        }
+    }
+
+    .cta-text{
+        span{
+            padding-left: 10px;
+        }
+    }
 </style>

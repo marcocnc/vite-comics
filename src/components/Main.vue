@@ -7,7 +7,9 @@ export default {
 
 <template>
   <main>
-    <div class="container"></div>
+    <div class="container">
+      <h1>Main</h1>
+    </div>
   </main>
 </template>
 
@@ -15,5 +17,6 @@ export default {
     main{
         background-color: #1C1C1C;
         height: 70px;
+        padding: 70px 0;
     }
 </style>

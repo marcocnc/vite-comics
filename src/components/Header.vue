@@ -21,7 +21,9 @@ export default {
         <div class="h-link d-flex-cont-center-items-center">
             <nav>
                 <ul class="d-flex">
-                    <li v-for="(link, index) in headerMenu" :key="index" ><a :class="{ 'active' : link.isActive}" href="#">{{ link.text }}</a></li>
+                    <li v-for="(link, index) in headerMenu" :key="index">
+                        <a :class="{ 'active' : link.isActive}" href="#">{{ link.text }}</a>
+                    </li>
                 </ul>
             </nav>
         </div>

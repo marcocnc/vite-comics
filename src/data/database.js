@@ -59,23 +59,138 @@ const ctaMenu = [
 
     {
         img : '../src/assets/img/buy-comics-merchandise.png',
-        text : 'DIGITAL COMICS'
+        text : 'DC MERCHANDISE'
     },
 
     {
         img : '../src/assets/img/buy-comics-shop-locator.png',
-        text : 'DIGITAL COMICS'
+        text : 'SUBSCRIPTION'
     },
 
     {
         img : '../src/assets/img/buy-comics-subscriptions.png',
-        text : 'DIGITAL COMICS'
+        text : 'COMIC SHOP LOCATION'
     },
 
     {
         img : '../src/assets/img/buy-dc-power-visa.svg',
-        text : 'DIGITAL COMICS'
+        text : 'DC POWER VISA'
     }
 ]
 
-export {headerMenu, ctaMenu}
+const footerMenuDcComics = [
+        {
+            href: '#',
+            text: 'Characters'
+        },
+        {
+            href: '#',
+            text: 'Comics'
+        },
+        {
+            href: '#',
+            text: 'Movies'
+        },
+        {
+            href: '#',
+            text: 'Tv'
+        },
+        {
+            href: '#',
+            text: 'Games'
+        },
+        {
+            href: '#',
+            text: 'Videos'
+        },
+        {
+            href: '#',
+            text: 'News'
+        },
+]
+
+const footerMenuShop = [
+    {
+        href: '#',
+        text: 'Shop DC'
+    },
+    {
+        href: '#',
+        text: 'Shop DC Collectibles'
+    },
+    
+]
+
+
+const footerMenuDc = [
+        {
+            href: '#',
+            text: 'Terms Of Use'
+        },
+        {
+            href: '#',
+            text: 'Privacy Policy (New)'
+        },
+        {
+            href: '#',
+            text: 'Ad Choices'
+        },
+        {
+            href: '#',
+            text: 'Advertising'
+        },
+        {
+            href: '#',
+            text: 'Jobs'
+        },
+        {
+            href: '#',
+            text: 'Subscriptions'
+        },
+        {
+            href: '#',
+            text: 'Talent Workshops'
+        },
+        {
+            href: '#',
+            text: 'CPSC Certificates'
+        },
+        {
+            href: '#',
+            text: 'Ratings'
+        },
+        {
+            href: '#',
+            text: 'Shop Help'
+        },
+        {
+            href: '#',
+            text: 'Contact Us'
+        },
+]
+
+
+const footerMenuDcSites = [
+        {
+            href: '#',
+            text: 'DC'
+        },
+        {
+            href: '#',
+            text: 'MAD Magazine'
+        },
+        {
+            href: '#',
+            text: 'DC Kids'
+        },
+        {
+            href: '#',
+            text: 'DC Universe'
+        },
+        {
+            href: '#',
+            text: 'DC Power Visa'
+        },
+]
+
+export {headerMenu, ctaMenu, footerMenuDcComics, footerMenuShop, footerMenuDc, footerMenuDcSites}

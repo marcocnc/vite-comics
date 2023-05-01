@@ -53,27 +53,27 @@ const headerMenu = [
 
 const ctaMenu = [
     {
-        img : '../src/assets/img/buy-comics-digital-comics.png',
+        img : 'buy-comics-digital-comics.png',
         text : 'DIGITAL COMICS'
     },
 
     {
-        img : '../src/assets/img/buy-comics-merchandise.png',
+        img : 'buy-comics-merchandise.png',
         text : 'DC MERCHANDISE'
     },
 
     {
-        img : '../src/assets/img/buy-comics-shop-locator.png',
+        img : 'buy-comics-shop-locator.png',
         text : 'SUBSCRIPTION'
     },
 
     {
-        img : '../src/assets/img/buy-comics-subscriptions.png',
+        img : 'buy-comics-subscriptions.png',
         text : 'COMIC SHOP LOCATION'
     },
 
     {
-        img : '../src/assets/img/buy-dc-power-visa.svg',
+        img : 'buy-dc-power-visa.svg',
         text : 'DC POWER VISA'
     }
 ]

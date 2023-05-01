@@ -46,6 +46,10 @@ export default {
         a{
         color: $color_white;
         font-size: 14px;
+
+        &:hover{
+          text-decoration: underline;
+        }
         }
       }
     }
@@ -57,6 +61,7 @@ export default {
       background-color: $color_blue;
       color: $color_white;
       padding: 10px 45px;
+      cursor: pointer;
     }
   }
 

@@ -6,6 +6,11 @@ export default {
       return{
         ctaMenu,
       }
+    },
+    methods:{
+        getImage(img){
+            return new URL(img, import.meta.url).href;
+        }
     }
 }
 </script>
@@ -16,7 +21,7 @@ export default {
         <div class="row d-flex-space-bet h-100">
             <div class="col d-flex-cont-center-items-center" v-for="(option, index) in ctaMenu" :key="index">
                 <div class="cta-image">
-                    <img :src="option.img" alt="">
+                    <img :src="getImage(`../assets/img/${option.img}`)" alt="">
                 </div>
                 <div class="cta-text">
                     <span>{{ option.text }}</span>

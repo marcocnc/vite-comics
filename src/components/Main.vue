@@ -1,22 +1,57 @@
 
 <script>
+import Cards from './Cards.vue'
+
 export default {
-    name: 'Main'
+    name: 'Main',
+    components:{
+      Cards
+    }
 }
 </script>
 
 <template>
   <main>
-    <div class="container">
-      <h1>Main</h1>
+    <div class="jumbotron">
+     
+    </div>
+    <div class="main-wrapper">
+      <div class="container">
+        <h2>CURRENT SERIES</h2>
+        
+        <Cards/>
+      </div>
     </div>
   </main>
 </template>
 
 <style lang="scss" scoped>
-    main{
+@use '../scss/variables' as *;
+  
+    .jumbotron{
+      background-image: url(../assets/img/jumbotron.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 300px;
+      width: 100%;
+    }
+    
+    .main-wrapper{
         background-color: #1C1C1C;
-        height: 70px;
-        padding: 70px 0;
+        height: 80vh;
+        // height: 70px;
+        // padding: 70px 0;
+
+      .container{
+        position: relative;
+
+          h2{
+            color: $color_white;
+            background-color:  $color_blue;
+            padding: 10px 15px;
+            position: absolute;
+            top: -94px;
+          }
+      }
     }
 </style>

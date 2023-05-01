@@ -46,6 +46,7 @@ export default {
     .cta-text{
         span{
             padding-left: 10px;
+            font-size: 14px;
         }
     }
 </style>

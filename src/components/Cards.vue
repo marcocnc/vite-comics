@@ -12,16 +12,16 @@ export default {
 
 <template>
   <div class="card-wrapper d-flex">
-    <div class="card">
-      <img src="https://www.coverbrowser.com/image/action-comics/1-1.jpg" alt="">
+    <div class="card" v-for="(film, index) in films" :key="index">
+      <img :src="film.thumb">
       <div class="title-card">
-        <a href="">TITOLO</a>
+        <a href="#">{{ film.series.toUpperCase() }}</a>
       </div>
     </div>
   </div>
 
   <div id="load-more" class="d-flex-cont-center-items-center">
-    <button>bottone</button>
+    <span>LOAD MORE</span>
   </div>
 </template>
 
@@ -30,23 +30,33 @@ export default {
 
   .card-wrapper{
     flex-wrap: wrap;
-  }
-  .card{
-    width: calc(100% / 6);
-    padding: 50px 20px 0 20px;
+  
+    .card{
+      width: calc(100% / 6);
+      padding: 50px 20px 0 20px;
 
-    img{
-      width: 100%;
-      height: 170px;
+     img{
+        width: 100%;
+        height: 170px;
+      }
+
+      .title-card{
+        padding-top: 15px;
+
+        a{
+        color: $color_white;
+        font-size: 14px;
+        }
+      }
     }
 
-    .title-card{
-      padding-top: 15px;
-      
-      a{
+  }
+  #load-more{
+    span{
+      margin-top: 40px;
+      background-color: $color_blue;
       color: $color_white;
-      font-size: 16px;
-      }
+      padding: 10px 45px;
     }
   }
 

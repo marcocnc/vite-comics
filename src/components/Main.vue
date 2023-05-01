@@ -38,10 +38,7 @@ export default {
     
     .main-wrapper{
         background-color: #1C1C1C;
-        height: 80vh;
-        // height: 70px;
-        // padding: 70px 0;
-
+        height: 95vh;
       .container{
         position: relative;
 
@@ -50,7 +47,8 @@ export default {
             background-color:  $color_blue;
             padding: 10px 15px;
             position: absolute;
-            top: -94px;
+            top: -30px;
+            cursor: pointer;
           }
       }
     }

@@ -19,16 +19,26 @@ export default {
 
 <template>
   <footer>
+
+    <!-- Footer top -->
     <div class="footer-top">
+
         <div class="container d-flex h-100">
+
             <div class="footer-nav d-flex">
+
+                <!-- First row -->
                 <div class="row">
+
+                    <!-- List 1 -->
                     <ul>
                         <li><h2>DC COMICS</h2></li>
                         <li v-for="(link, index) in footerMenuDcComics" :key="index">
                             <a :href="link.href">{{ link.text }}</a>
                         </li>
                     </ul>
+
+                    <!-- List 2 -->
                     <ul>
                         <li><h2>SHOP</h2></li>
                         <li v-for="(link, index) in footerMenuShop" :key="index">
@@ -36,8 +46,11 @@ export default {
                         </li>
                     </ul>
                 </div>
+
+                <!-- Second row -->
                 <div class="row d-flex">
 
+                    <!-- List 3 -->
                     <ul>
                         <li><h2>DC</h2></li>
                         <li v-for="(link, index) in footerMenuDc" :key="index">
@@ -45,6 +58,7 @@ export default {
                         </li>
                     </ul>
 
+                    <!-- List 4 -->
                     <ul>
                         <li><h2>SITES</h2></li>
                         <li v-for="(link, index) in footerMenuDcSites" :key="index">
@@ -54,18 +68,29 @@ export default {
                 </div>
             </div>
             <div class="dc-logo-footer">
-                <!-- <img src="../assets/img/dc-logo-bg.png" alt=""> -->
+                
             </div>
         </div>
     </div>
+    <!-- /Footer top -->
+
+
+    <!-- Footer bottom -->
     <div class="footer-bottom">
+
         <div class="container h-100 d-flex-space-bet">
+
+            <!-- Left side -->
             <div class="f-left">
                 <button>SIGN-UP NOW!</button>
             </div>
+
+            <!-- Right side -->
             <div class="f-right d-flex align-center">
                 
                     <h3>FOLLOW US</h3>
+
+                    <!-- Social -->
                     <img src="../assets/img/footer-facebook.png" alt="">
                     <img src="../assets/img/footer-twitter.png" alt="">
                     <img src="../assets/img/footer-youtube.png" alt="">
@@ -87,6 +112,8 @@ export default {
         background-size: cover;
     }
 
+
+    // Footer top
     .footer-top{
         height: 100%;
 
@@ -124,11 +151,15 @@ export default {
             background-position-y: -90px;
         }
     }
+    // /Footer top
+
+    // Footer bottom
     .footer-bottom{
         height: 30%;
         background-color: #303030;
     }
 
+    // Left side
     .f-left{
         button{
             background-color: #303030;
@@ -145,6 +176,7 @@ export default {
         }
     }
 
+    // Right side
     .f-right{
 
         h3{

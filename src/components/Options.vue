@@ -7,6 +7,8 @@ export default {
         ctaMenu,
       }
     },
+
+    // Function for images
     methods:{
         getImage(img){
             return new URL(img, import.meta.url).href;
@@ -16,9 +18,15 @@ export default {
 </script>
 
 <template>
+
+    <!-- CTA Section -->
   <section id="cta">
+
     <div class="container h-100">
+
         <div class="row d-flex-space-bet h-100">
+
+            <!-- Single card -->
             <div class="col d-flex-cont-center-items-center" v-for="(option, index) in ctaMenu" :key="index">
                 <div class="cta-image">
                     <img :src="getImage(`../assets/img/${option.img}`)" alt="">
@@ -27,6 +35,7 @@ export default {
                     <span>{{ option.text }}</span>
                 </div>
             </div>
+
         </div>
     </div>
   </section>

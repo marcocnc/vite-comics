@@ -13,13 +13,16 @@ export default {
 <template>
   <main>
     <div class="jumbotron">
-     
+     <!-- Jumbotron -->
     </div>
+
     <div class="main-wrapper">
       <div class="container">
         <h2>CURRENT SERIES</h2>
         
+        <!-- Tag from Cards.vue -->
         <Cards/>
+
       </div>
     </div>
   </main>
@@ -27,7 +30,8 @@ export default {
 
 <style lang="scss" scoped>
 @use '../scss/variables' as *;
-  
+
+    // Jumbotron
     .jumbotron{
       background-image: url(../assets/img/jumbotron.jpg);
       background-size: cover;

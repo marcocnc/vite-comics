@@ -11,15 +11,20 @@ export default {
 </script>
 
 <template>
+
   <div class="card-wrapper d-flex">
+    <!-- Cicled div card -->
     <div class="card" v-for="(film, index) in films" :key="index">
+
       <img :src="film.thumb">
+
       <div class="title-card">
         <a href="#">{{ film.series.toUpperCase() }}</a>
       </div>
     </div>
   </div>
 
+    <!-- Button -->
   <div id="load-more" class="d-flex-cont-center-items-center">
     <span>LOAD MORE</span>
   </div>
@@ -31,6 +36,7 @@ export default {
   .card-wrapper{
     flex-wrap: wrap;
   
+    // Cards style
     .card{
       width: calc(100% / 6);
       padding: 50px 20px 0 20px;
@@ -55,6 +61,8 @@ export default {
     }
 
   }
+
+  // Button
   #load-more{
     span{
       margin-top: 40px;

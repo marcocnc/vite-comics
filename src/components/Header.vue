@@ -15,9 +15,13 @@ export default {
   <header>
     <div class="container">
         <div class="header-container d-flex-space-bet">
+
+            <!-- Logo -->
         <div class="image">
             <img src="../assets/img/dc-logo.png" alt="dc-logo">
         </div>
+        
+            <!-- Links -->
         <div class="h-link d-flex-cont-center-items-center">
             <nav>
                 <ul class="d-flex">
@@ -41,6 +45,8 @@ export default {
     .header-container{
         height: 100%;
     }
+
+    // Image
     .image{
         img{
             height: 70px;
@@ -49,6 +55,7 @@ export default {
         }
     }
     
+    // Links style
     .h-link{
         height: 100%;
         

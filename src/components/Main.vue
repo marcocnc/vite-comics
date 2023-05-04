@@ -1,11 +1,13 @@
 
 <script>
-import Cards from './Cards.vue'
+
+
+import CardsContainer from './CardsContainer.vue';
 
 export default {
     name: 'Main',
     components:{
-      Cards
+      CardsContainer,
     }
 }
 </script>
@@ -21,7 +23,8 @@ export default {
         <h2>CURRENT SERIES</h2>
         
         <!-- Tag from Cards.vue -->
-        <Cards/>
+        <CardsContainer />
+        
 
       </div>
     </div>

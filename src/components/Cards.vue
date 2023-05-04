@@ -6,70 +6,57 @@ export default {
       return{
         films,
       }
+    },
+    props:{
+      thumb: String,
+      series: String
     }
 }
 </script>
 
 <template>
 
-  <div class="card-wrapper d-flex">
+  
     <!-- Cicled div card -->
-    <div class="card" v-for="(film, index) in films" :key="index">
+    <div class="card">
 
-      <img :src="film.thumb">
+      <img :src="thumb">
 
       <div class="title-card">
-        <a href="#">{{ film.series.toUpperCase() }}</a>
+        <a href="#">{{ series.toUpperCase() }}</a>
       </div>
     </div>
-  </div>
+  
 
-    <!-- Button -->
-  <div id="load-more" class="d-flex-cont-center-items-center">
-    <span>LOAD MORE</span>
-  </div>
+  
 </template>
 
 <style lang="scss" scoped>
 @use '../scss/variables' as *;
 
-  .card-wrapper{
-    flex-wrap: wrap;
+  
   
     // Cards style
-    .card{
-      width: calc(100% / 6);
-      padding: 50px 20px 0 20px;
+  .card{
+    width: calc(100% / 6);
+    padding: 50px 20px 0 20px;
 
-     img{
-        width: 100%;
-        height: 170px;
-      }
-
-      .title-card{
-        padding-top: 15px;
-
-        a{
-        color: $color_white;
-        font-size: 14px;
-
-        &:hover{
-          text-decoration: underline;
-        }
-        }
-      }
+    img{
+      width: 100%;
+      height: 170px;
     }
 
-  }
+    .title-card{
+      padding-top: 15px;
 
-  // Button
-  #load-more{
-    span{
-      margin-top: 40px;
-      background-color: $color_blue;
+      a{
       color: $color_white;
-      padding: 10px 45px;
-      cursor: pointer;
+      font-size: 14px;
+
+      &:hover{
+        text-decoration: underline;
+      }
+      }
     }
   }
 
